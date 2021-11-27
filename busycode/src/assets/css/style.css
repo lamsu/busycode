@@ -1,0 +1,121 @@
+/*禁止选中 0*/
+
+*,
+body {
+    -webkit-touch-callout: none;
+    /*系统默认菜单被禁用*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    -moz-user-select: none;
+    /*火狐*/
+    -ms-user-select: none;
+    /*IE10*/
+    user-select: none;
+}
+
+input {
+    -webkit-user-select: auto;
+    /*webkit浏览器*/
+}
+
+textarea {
+    -webkit-user-select: auto;
+    /*webkit浏览器*/
+}
+
+
+/*禁止选中 1*/
+
+
+/*去除原始样式 0*/
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*去除原始样式 1*/
+
+#footer {
+    text-align: center;
+    font-size: .6em;
+    color: #999;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+}
+
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 15px;
+}
+
+.container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media(min-width:768px) {
+    .container {
+        max-width: 728px;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        max-width: 952px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        max-width: 952px;
+    }
+}
+
+.borderline {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.marright {
+    margin-right: 30px;
+}
+
+.incontain {
+    overflow: hidden;
+}
+
+.incontain .el-scrollbar__wrap {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+/* 二维码*/
+
+#qrcode {
+    display: block;
+    margin: 30px auto 0;
+    max-width: 400px !important;
+    max-height: 400px !important;
+}
+
+.scollPadRight {
+    padding-right: 10px;
+}
